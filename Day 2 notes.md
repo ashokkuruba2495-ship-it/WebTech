@@ -104,7 +104,7 @@ Database
 Spring Boot simplifies Spring development.
 
 Main Layers
-
+```
 Controller
    ↓
 Service
@@ -114,13 +114,14 @@ DAO
 Repository
    ↓
 Database
+```
 
 ---
 
 6. Spring Boot Application
 
 Main Class
-
+```
 @SpringBootApplication
 public class PmsApplication {
 
@@ -129,7 +130,7 @@ public class PmsApplication {
     }
 
 }
-
+```
 Annotation
 
 "@SpringBootApplication"
@@ -150,7 +151,7 @@ It combines:
 7. Creating Model Class
 
 Product.java
-
+```
 @Entity
 public class Product {
 
@@ -166,7 +167,7 @@ private int stockQuantity;
 private boolean inStock;
 
 }
-
+```
 Annotations Used
 
 Annotation| Purpose
@@ -179,13 +180,13 @@ Annotation| Purpose
 8. Generate Getters and Setters
 
 In Eclipse:
-
+```
 Right Click
    ↓
 Source
    ↓
 Generate Getters and Setters
-
+```
 Select all fields and click Generate.
 
 ---
@@ -193,12 +194,12 @@ Select all fields and click Generate.
 9. Repository Layer
 
 ProductRepository.java
-
+```
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Long> {
 
 }
-
+```
 Purpose
 
 - Connects Java code with database
@@ -209,7 +210,7 @@ Purpose
 10. DAO Layer
 
 ProductDao.java
-
+```
 @Repository
 public class ProductDao {
 
@@ -221,7 +222,7 @@ return repo.findAll();
 }
 
 }
-
+```
 Purpose
 
 Handles database logic.
@@ -231,7 +232,7 @@ Handles database logic.
 11. Service Layer
 
 ProductService.java
-
+```
 @Service
 public class ProductService {
 
@@ -243,7 +244,7 @@ return dao.getProduct();
 }
 
 }
-
+```
 Purpose
 
 Contains business logic.
@@ -253,7 +254,7 @@ Contains business logic.
 12. Controller Layer
 
 ProductController.java
-
+```
 @RestController
 public class ProductController {
 
@@ -266,7 +267,7 @@ return service.getProduct();
 }
 
 }
-
+```
 Purpose
 
 Handles HTTP requests and returns API responses.
@@ -276,11 +277,13 @@ Handles HTTP requests and returns API responses.
 13. Database (MySQL)
 
 Create Database
-
+```
 create database ProductManagementSystem;
-
+```
+```
 use ProductManagementSystem;
-
+```
+```
 Insert Data
 
 INSERT INTO product (name, description, category, price, stock_quantity, in_stock)
@@ -288,10 +291,11 @@ VALUES
 ('Laptop','High performance laptop','Electronics',65000,10,true),
 ('Smartphone','Android smartphone with 128GB storage','Electronics',25000,25,true),
 ('Office Chair','Ergonomic office chair','Furniture',5000,15,true);
-
+```
 Retrieve Data
-
+```
 select * from product;
+```
 
 ---
 
@@ -300,11 +304,12 @@ select * from product;
 Run the Spring Boot application.
 
 Use GET request:
-
+```
 http://localhost:8080/getProduct
+```
 
 Example Response
-
+```
 [
 {
 "id":1,
@@ -312,7 +317,7 @@ Example Response
 "category":"Electronics"
 }
 ]
-
+```
 ---
 
 15. Tools Used

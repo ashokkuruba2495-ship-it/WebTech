@@ -9,9 +9,9 @@
 | Day 3  | CRUD Operations   |Implemented CRUD operations in the Product Management System using Spring Boot. Used Postman to test APIs and stored product data in the MySQL database. |
 | Day 4  |                   |                                                                                                                                    |
 | Day 5  |                   |                                                                                                                                    |
-| Day 6  |                   |                                                                                                                                    |
-| Day 7  |                   |                                                                                                                                    |
-| Day 8  |                   |                                                                                                                                    |
+| Day 6  |React Frontend Development  |Started working on the frontend using React. Set up the React project environment and learned the basic structure of a React application including components, folders, and dependencies. Began developing the user interface for the project such as Login and Registration pages and connected the frontend with backend APIs using Axios.|
+| Day 7  |Frontend Improvement |      Improved the forntend by 80% of it.   |
+| Day 8  |Project Structure, Flowchart & Data Flow  |  Organized the Spring Boot project by creating proper packages (Controller, Service, Repository, Model), configured database settings in application.properties, and connected the project to MySQL. Designed a flowchart explaining the system workflow and documented the data flow of the project including project details, errors encountered during development, and their solutions. Prepared the complete workflow explanation to share as a single report/message. |
 | Day 9  |                   |                                                                                                                                    |
 | Day 10 |                   |                                                                                                                                    |
 

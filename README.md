@@ -27,3 +27,22 @@
 * Postman 
 
 <img width="306" height="356" alt="image" src="https://github.com/user-attachments/assets/7bc4b8c1-4061-4862-ae34-15865bd0d571" />
+
+
+# Spring Boot Learning – Issues Log
+
+| Day | Issue | Reason | Fix |
+|-----|------|--------|-----|
+| Day 1 | Hibernate MySQL Dialect Error | MySQL8Dialect removed in Hibernate 7 | Changed to `org.hibernate.dialect.MySQLDialect` in `application.properties` |
+| Day 2 | Postman API 404 Not Found | Used online Postman which didn't send requests correctly | Installed and used Postman Desktop |
+| Day 3 | Application not starting (Port in use) | Port 8080 already running | Changed `server.port` to `8081` |
+| Day 3 | JSON format error in Postman | Incorrect JSON syntax | Corrected JSON request body |
+| Day 3 | 405 Method Not Allowed | Wrong HTTP method used | Selected correct method (`POST` / `PUT`) |
+| Day 4 | GitHub authentication error from STS | Password authentication removed by GitHub | Generated and used Personal Access Token |
+| Day 5 | React project creation confusion | Mixed Create React App and Vite | Recreated project using Vite |
+| Day 6 | React folder structure mismatch | Incorrect component structure and missing dependencies | Reorganized folders and installed dependencies |
+| Day 7 | Project workflow not clear | No clear architecture between frontend, backend, database | Created flowchart and project documentation |
+| Day 8 | Spring Boot dependency installation issue | Dependency/version mismatch | Added correct dependencies and reloaded Maven project |
+| Day 9 |  |  |  |
+| Day 10 |  |  |  |
+
